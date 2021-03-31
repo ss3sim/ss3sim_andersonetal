@@ -15,6 +15,8 @@ As more and more journals are accepting alternative formats to word documents,
 the code documented here can serve as an example or inspiration for future work.
 
 ## Citation
+
+```
 @article{10.1371/journal.pone.0092725,
 author = {S.C. Anderson AND C.C. Monnahan AND K.F. Johnson AND K. Ono AND J.L. Valero},
 journal = {PLOS ONE},
@@ -29,3 +31,4 @@ abstract = {Simulation testing is an important approach to evaluating fishery st
 number = {4},
 doi = {10.1371/journal.pone.0092725}
 }
+```

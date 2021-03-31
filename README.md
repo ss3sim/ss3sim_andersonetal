@@ -1,70 +1,31 @@
-To contribute, you have a number of options:
+# ss3sim_andersonetal
 
-1. Create a branch of this repository and edit `ss3sim-ms.md`. 
+A repository to store the code used to write
+[Anderson et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0092725).
+The main text of the manuscript is available in `ss3sim-ms.md`.
 
-[First set up Git and GitHub and clone the repository.](https://github.com/seananderson/ss3sim/wiki/Working-with-Git-locally)
+## History of the manuscript
 
-Then:
+The manuscript began as the original vignette for ss3sim and was used as a way
+to cite the available R package. Since then, the vignette has evolved to keep
+up with changes to the package, but this repository acts as an archival method
+for the original code and illustrates a way forward for how to
+collaboratively write a manuscript using markdown.
+As more and more journals are accepting alternative formats to word documents,
+the code documented here can serve as an example or inspiration for future work.
 
-```git
-git pull
-```
-
-```git
-git checkout -b sean-ms-edits # pick an appropriate branch name
-```
-
-Do your editing now in any text editor you'd like.
-
-```git
-git add ss3sim-ms.md  # from within the /inst/ms/ folder
-```
-
-```git
-git commit
-```
-
-Add your commit message now, save, and close the commit window.
-
-```git
-git push origin sean-ms-edits # replace the branch name with yours
-```
-
-Now, to get back to the `master` branch, if you want:
-
-```git
-git checkout master
-```
-
-And to get back to your branch:
-
-```git
-git checkout seans-ms-edits # replace with your branch name
-```
-
-Now, go to the GitHub ss3sim site and click the green button "Compare and pull request".
-
-Add a message summarizing your changes, if possible.
-
-Then click the green button "Send pull request".
-
-That's it!
-
-2. Download the file
-   [`ss3sim-ms.pdf`](https://dl.dropboxusercontent.com/u/254940/ss3sim-ms.pdf)
-   and add comments. Then email me the edited version.
-
-3. Download the file
-   [`ss3sim-ms.docx`](https://dl.dropboxusercontent.com/u/254940/ss3sim-ms.docx)
-   and edit using track changes. Then email me the edited version.
-
-We are developing the appendix (an R vignette) in the file
-`ss3sim-vignette.Rnw` in the `vignettes` folder.
-
-If you have references to add, please add them in BibTeX format to the file
-`refs.bib` (or send them to me).
-
-Note that the lines in `ss3sim-ms.md` are wrapped approximately on phrases to make Git
-diffs and merging easier. Don't worry too much about this as you edit, just try
-and keep the line length approximately 80 characters or less and don't make
-line break changes unless you need to.
+## Citation
+@article{10.1371/journal.pone.0092725,
+author = {S.C. Anderson AND C.C. Monnahan AND K.F. Johnson AND K. Ono AND J.L. Valero},
+journal = {PLOS ONE},
+publisher = {Public Library of Science},
+title = {ss3sim: An {R} Package for Fisheries Stock Assessment Simulation with {S}tock {S}ynthesis},
+year = 2014,
+month = {04},
+volume = 9,
+url = {https://doi.org/10.1371/journal.pone.0092725},
+pages = {1-7},
+abstract = {Simulation testing is an important approach to evaluating fishery stock assessment methods. In the last decade, the fisheries stock assessment modeling framework Stock Synthesis (SS3) has become widely used around the world. However, there lacks a generalized and scriptable framework for SS3 simulation testing. Here, we introduce ss3sim, an R package that facilitates reproducible, flexible, and rapid end-to-end simulation testing with SS3. ss3sim requires an existing SS3 model configuration along with plain-text control files describing alternative population dynamics, fishery properties, sampling scenarios, and assessment approaches. ss3sim then generates an underlying ‘truth’ from a specified operating model, samples from that truth, modifies and runs an estimation model, and synthesizes the results. The simulations can be run in parallel, reducing runtime, and the source code is free to be modified under an open-source MIT license. ss3sim is designed to explore structural differences between the underlying truth and assumptions of an estimation model, or between multiple estimation model configurations. For example, ss3sim can be used to answer questions about model misspecification, retrospective patterns, and the relative importance of different types of fisheries data. We demonstrate the software with an example, discuss how ss3sim complements other simulation software, and outline specific research questions that ss3sim could address.},
+number = {4},
+doi = {10.1371/journal.pone.0092725}
+}
